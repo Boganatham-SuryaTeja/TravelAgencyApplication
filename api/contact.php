@@ -26,7 +26,7 @@
         <?php
         $cur_dir = getcwd(); 
         echo "<p>$cur_dir</p>";
-        $contactFile1 = file_get_contents('contacts.txt');
+        $contactFile1 = file_get_contents('/api/contacts.txt');
         echo "<p>$contactFile1</p>";
         if (file_exists($contactFile)) {
             $lines = file($contactFile);
