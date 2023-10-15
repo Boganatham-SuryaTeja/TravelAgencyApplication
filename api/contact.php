@@ -25,7 +25,7 @@
         </p>
         <?php
         // $contactFile = getcwd() . '/' . './contacts.txt';
-        echo <p>getcwd()</p>
+        echo <p>getcwd()</p>;
         $contactFile1 = file_get_contents($contactFile);
         echo "<p>$contactFile1</p>";
         if (file_exists($contactFile)) {
