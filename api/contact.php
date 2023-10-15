@@ -26,9 +26,9 @@
         <?php
         // $cur_dir = realpath('/api/contacts.txt'); 
         // echo "<p>$cur_dir</p>";
-        $exsists = file_exists('/api/contacts.txt');
-        echo "<p>$exsists</p>";
-        $contactFile1 = file_get_contents('/api/contacts.txt');
+        // $exsists = file_exists('/api/contacts.txt');
+        // echo "<p>$exsists</p>";
+        $contactFile1 = file_get_contents("contacts.txt");
         echo "<p>$contactFile1</p>";
         if (file_exists($contactFile)) {
             $lines = file($contactFile);
