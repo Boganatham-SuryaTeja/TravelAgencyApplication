@@ -24,7 +24,7 @@
             Have a question or need assistance? Feel free to contact us.
         </p>
         <?php
-        $contactFile = 'contacts.txt';
+        $contactFile = "\api\contacts.txt";
         if (file_exists($contactFile)) {
             $lines = file($contactFile);
             
