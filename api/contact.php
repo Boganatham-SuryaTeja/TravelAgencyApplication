@@ -25,6 +25,7 @@
         </p>
         <?php
         $contactFile = 'contacts.txt';
+        echo "<p>$contactFile</p>";
         if (file_exists($contactFile)) {
             $lines = file($contactFile);
             
