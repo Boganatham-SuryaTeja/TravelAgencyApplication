@@ -28,7 +28,7 @@
         echo "<p>$cur_dir</p>";
         $exsists = file_exists($cur_dir);
         echo "<p>$exsists</p>";
-        $contactFile1 = file_get_contents();
+        $contactFile1 = file_get_contents($cur_dir);
         echo "<p>$contactFile1</p>";
         if (file_exists($contactFile)) {
             $lines = file($contactFile);
