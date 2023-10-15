@@ -25,7 +25,8 @@
         </p>
         <?php
         $contactFile = './contacts.txt';
-        $contactFile1 = file_get_contents("contacts.txt");
+        $file = path.join(process.cwd(), 'contacts.txt')
+        $contactFile1 = file_get_contents($file);
         echo "<p>$contactFile1</p>";
         if (file_exists($contactFile)) {
             $lines = file($contactFile);
