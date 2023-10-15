@@ -28,10 +28,10 @@
         // echo "<p>$cur_dir</p>";
         // $exsists = file_exists('/api/contacts.txt');
         // echo "<p>$exsists</p>";
-        $contactFile1 = file_get_contents(__DIR__ . '/../api/contacts.txt');
-        echo "<p>$contactFile1</p>";
-        if (file_exists($contactFile)) {
-            $lines = file($contactFile);
+        // $contactFile1 = file_get_contents(__DIR__ . '/../api/contacts.txt');
+        // echo "<p>$contactFile1</p>";
+        if (file_exists(__DIR__ . '/../api/contacts.txt')) {
+            $lines = file(__DIR__ . '/../api/contacts.txt');
             
             foreach ($lines as $line) {
                 $info = explode(': ', $line);
