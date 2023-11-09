@@ -202,3 +202,33 @@ img{
     width: 300px;
     text-align: center;
 }
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Adds vertical padding for spacing */
+    text-align: center;
+}
+
+.service-container {
+    width: 100%;
+    max-width: 600px; /* Adjust as necessary for your layout */
+    margin: 0 auto; /* Centers the container */
+}
+
+.service-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-heading, .service-description, .service-price {
+    margin-bottom: 20px;
+}
+
+.service-price h2 {
+    margin-bottom: 10px;
+}
