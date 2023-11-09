@@ -13,7 +13,6 @@ function track_service_visit($service_name) {
     if (!in_array($service_name, $visited_services)) {
         array_unshift($visited_services, $service_name); // Add to the beginning of the array
         $visited_services = array_slice($visited_services, 0, 5); // Keep only the last five services
-        var_dump($visited_services);
         setcookie('visited_services', serialize($visited_services), time() + (86400 * 30), "/"); // 86400 = 1 day
     }
     else
@@ -21,7 +20,6 @@ function track_service_visit($service_name) {
         unset($visited_services[array_search($service_name, $visited_services)]);
         array_unshift($visited_services, $service_name);   
         $visited_services = array_slice($visited_services, 0, 5);
-        var_dump($visited_services);
         setcookie('visited_services', serialize($visited_services), time() + (86400 * 30), "/"); // 86400 = 1 day
     }
 }
